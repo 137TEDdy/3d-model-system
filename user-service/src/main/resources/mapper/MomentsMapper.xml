@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushenwuzu.mapper.MomentsMapper">
+
+  <resultMap id="mySelectMomentsVOMap" type="com.liushenwuzu.domain.vo.MomentsVo" autoMapping="true">
+    <id column="moment_id" property="momentId"></id>
+    <result column="user_id" property="userId"></result>
+    <result column="content" property="content"></result>
+    <result column="created_time" property="createdTime"></result>
+    <result column="title" property="title"></result>
+    <result column="avatar_url" property="avatarUrl"></result>
+    <result column="nickname" property="nickname"></result>
+  </resultMap>
+
+  <select id="selectMomentsVO" resultMap="mySelectMomentsVOMap">
+    SELECT m.moment_id,
+           m.user_id,
+           m.content,
+           m.created_time,
+           m.title,
+           u.avatar_url,
+           u.nickname
+
+    FROM moments m
+           left join `users` u ON m.user_id = u.user_id
+  </select>
+
+  <select id="selectMomentsVOByUserId" resultMap="mySelectMomentsVOMap">
+    SELECT m.moment_id,
+           m.user_id,
+           m.content,
+           m.created_time,
+           m.title,
+           u.avatar_url,
+           u.nickname
+
+    FROM moments m
+           left join `users` u ON m.user_id = u.user_id
+    WHERE m.user_id = #{userId}
+  </select>
+
+</mapper>

@@ -1,0 +1,56 @@
+server:
+  port: 8094
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${eM.db.host}:${eM.db.port}/easymodel
+    username: root
+    password: ${eM.db.pw}
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 600000
+
+  redis:
+    host: ${eM.redis.host}
+    port: ${eM.redis.port}
+    password: ${eM.redis.pw}
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 4
+        min-idle: 0
+
+em:
+  jwt:
+    location: classpath:em.jks # 秘钥地址
+    alias: em # 秘钥别名
+    password: hmall123 # 秘钥文件密码
+    tokenTTL: 30m # 登录有效期
+  auth:
+    #    includePaths:
+    #      - /api/user/query
+    excludePaths: # 无需登录校验的路径
+      - /api/user/login
+      - /api/user/verify
+      - /api/user/register
+      - /api/admin/login
+
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+#spring事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+    com.baomidou.mybatisplus: debug
+
+

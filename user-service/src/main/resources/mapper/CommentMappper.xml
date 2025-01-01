@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushenwuzu.mapper.CommentMapper">
+
+  <resultMap id="mySelectCommentVOMap" type="com.liushenwuzu.domain.vo.CommentVo" autoMapping="true">
+    <id column="comment_id" property="commentId"></id>
+    <result column="user_id" property="userId"></result>
+    <result column="moment_id" property="momentId"></result>
+    <result column="content" property="content"></result>
+    <result column="created_time" property="createdTime"></result>
+    <result column="avatar_url" property="avatarUrl"></result>
+    <result column="nickname" property="nickname"></result>
+  </resultMap>
+
+  <select id="selectCommentsUnderMoment" resultMap="mySelectCommentVOMap">
+    SELECT c.comment_id,
+           c.user_id,
+           c.moment_id,
+           c.content,
+           c.created_time,
+           u.avatar_url,
+           u.nickname
+    FROM `comment` c
+           left join `users` u ON c.user_id = u.user_id
+    WHERE c.moment_id = #{momentId}
+  </select>
+
+</mapper>

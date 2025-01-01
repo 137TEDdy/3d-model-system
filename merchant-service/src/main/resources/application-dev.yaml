@@ -1,0 +1,10 @@
+eM:
+ db:
+   host: 106.15.39.106
+   pw: Liushenwuzu01.EasyModel
+   port: 3307
+
+ redis:
+  host: 106.15.39.106
+  port: 6379
+  pw: Liushenwuzu01.EasyModel

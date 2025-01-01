@@ -1,0 +1,48 @@
+server:
+  port: 8093
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${eM.db.host}:${eM.db.port}/easymodel
+    username: root
+    password: ${eM.db.pw}
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 600000
+  redis:
+    host: ${eM.redis.host}
+    port: ${eM.redis.port}
+    password: ${eM.redis.pw}
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 4
+        min-idle: 0
+
+minio:
+  host: http://106.15.39.106:9001
+  url: ${minio.host}/${minio.bucket}/
+  accessKey:  0H7D8RSPFH8AS0E9F6BE
+  secretKey:  S4lXE6QpHLjfvpHafwptrIPfNS5jhf5Az2uzDJm+
+  bucket: easy-model
+
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+em:
+  auth:
+    #    includePaths:
+    #      - /api/user/query
+    excludePaths: # 无需登录校验的路径
+      - /api/user/login
+      - /api/user/verify
+      - /api/user/register
+
