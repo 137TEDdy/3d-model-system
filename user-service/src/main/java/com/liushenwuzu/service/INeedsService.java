@@ -9,9 +9,6 @@ import java.util.List;
 
 /**
  * 用户发布的3d需求 服务类
- *
- * @author clk
- * @since 2023-11-12
  */
 public interface INeedsService extends IService<Needs> {
 

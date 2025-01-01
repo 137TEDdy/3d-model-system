@@ -7,9 +7,6 @@ import org.springframework.context.ApplicationContextAware;
 
 /**
  * 产生bean工厂.
- *
- * @author zzx
- * @date 2023/12/19
  */
 public class ApplicationBeanFactory implements ApplicationContextAware {
 

@@ -7,9 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 认证审核 Mapper 接口.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Mapper
 public interface VerificationMapper extends BaseMapper<Verification> {

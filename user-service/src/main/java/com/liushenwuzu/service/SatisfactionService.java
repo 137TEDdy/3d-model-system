@@ -9,9 +9,6 @@ import java.util.List;
 
 /**
  * 满足service层
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public interface SatisfactionService extends IService<Satisfaction> {
 

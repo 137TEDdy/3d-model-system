@@ -15,9 +15,6 @@ import java.time.LocalDateTime;
 
 /**
  * 用户登录日志.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -12,10 +12,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author totoro
- * @date 2023/12/19
- */
 @Service
 public class MomentsServiceImpl extends ServiceImpl<MomentsMapper, Moments>
     implements IMomentsService {

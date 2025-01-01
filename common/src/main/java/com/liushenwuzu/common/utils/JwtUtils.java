@@ -9,9 +9,6 @@ import java.util.Map;
 
 /**
  * jwt工具包
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public class JwtUtils {
 
@@ -20,9 +17,6 @@ public class JwtUtils {
 
   /**
    * 生成JWT令牌
-   *
-   * @param claims JWT第二部分负载 payload 中存储的内容
-   * @return
    */
   public static String generateJwt(Map<String, Object> claims) {
     String jwt = Jwts.builder()

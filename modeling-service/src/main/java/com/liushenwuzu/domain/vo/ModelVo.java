@@ -4,9 +4,6 @@ import lombok.Data;
 
 /**
  * 返回前端模型实体
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Data
 public class ModelVo {

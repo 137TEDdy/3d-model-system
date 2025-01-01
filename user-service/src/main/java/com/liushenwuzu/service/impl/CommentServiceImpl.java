@@ -12,10 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author totoro
- * @date 2023/12/19
- */
+
 @Service
 public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment>
     implements ICommentService {

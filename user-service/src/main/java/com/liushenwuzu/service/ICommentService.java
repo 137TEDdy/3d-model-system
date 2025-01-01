@@ -9,9 +9,6 @@ import java.util.List;
 
 /**
  * 评论接口
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 public interface ICommentService extends IService<Comment> {
 

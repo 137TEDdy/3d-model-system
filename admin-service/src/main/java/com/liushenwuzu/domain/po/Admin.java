@@ -14,9 +14,6 @@ import java.io.Serializable;
 
 /**
  * 管理员表.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

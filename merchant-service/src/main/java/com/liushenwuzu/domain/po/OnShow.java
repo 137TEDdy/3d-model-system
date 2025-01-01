@@ -13,12 +13,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * <p>
  * 在售3d模型
- * </p>
- *
- * @author clk
- * @since 2023-12-21
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

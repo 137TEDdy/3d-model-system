@@ -16,9 +16,6 @@ import org.springframework.web.multipart.MultipartRequest;
 
 /**
  * 模型service接口
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 public interface ModelService extends IService<Model> {
 

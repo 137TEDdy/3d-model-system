@@ -10,9 +10,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 图片service层实现
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Service
 public class ImageServiceImpl extends ServiceImpl<ImageMapper, Image> implements ImageService {

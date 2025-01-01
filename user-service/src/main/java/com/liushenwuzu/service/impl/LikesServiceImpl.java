@@ -10,9 +10,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 收藏列表 服务实现类.
- *
- * @author totoro
- * @date 2023/12/19
  */
 @Service
 public class LikesServiceImpl extends ServiceImpl<LikesMapper, Likes> implements ILikesService {

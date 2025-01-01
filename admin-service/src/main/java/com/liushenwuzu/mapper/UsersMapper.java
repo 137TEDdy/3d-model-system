@@ -7,9 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * Mapper 接口.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Mapper
 public interface UsersMapper extends BaseMapper<Users> {

@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 图片mapper层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Mapper
 public interface ImageMapper extends BaseMapper<Image> {

@@ -10,10 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
 
-/**
- * @author totoro
- * @date 2023/12/19
- */
 @Slf4j
 @Service
 public class ModelServiceImpl extends ServiceImpl<ModelMapper, Model> implements ModelService {

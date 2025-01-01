@@ -6,9 +6,6 @@ import com.liushenwuzu.domain.po.Model;
 
 /**
  * 模型service层接口
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public interface ModelService extends IService<Model> {
 

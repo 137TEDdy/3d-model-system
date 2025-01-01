@@ -6,9 +6,6 @@ import lombok.Data;
 
 /**
  * 查询模型表单
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Data
 @ApiModel(description = "查询模型表单")

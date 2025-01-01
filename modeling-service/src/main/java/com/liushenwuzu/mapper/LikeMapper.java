@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 收藏mapper层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Mapper
 public interface LikeMapper extends BaseMapper<Like> {

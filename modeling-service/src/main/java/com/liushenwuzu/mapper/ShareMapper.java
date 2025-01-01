@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 分享mapper层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Mapper
 public interface ShareMapper extends BaseMapper<Share> {

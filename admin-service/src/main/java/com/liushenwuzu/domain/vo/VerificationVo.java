@@ -9,9 +9,6 @@ import java.time.LocalDateTime;
 
 /**
  * 审核表单VO
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 @Data
 @ApiModel("审核表单VO")

@@ -16,9 +16,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 在售模型service层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Slf4j
 @Service

@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 认证审核 服务实现类.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Service
 public class VerificationServiceImpl extends ServiceImpl<VerificationMapper, Verification>

@@ -8,9 +8,6 @@ import lombok.Data;
 
 /**
  * 数据库喜欢列表实体
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Data
 @TableName("likes")

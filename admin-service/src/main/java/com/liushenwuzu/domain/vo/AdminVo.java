@@ -6,9 +6,6 @@ import lombok.Data;
 
 /**
  * 管理员登录表单
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 @Data
 @ApiModel("管理员登录VO")

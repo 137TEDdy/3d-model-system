@@ -6,9 +6,6 @@ import lombok.Data;
 
 /**
  * 用图片生成模型表单
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Data
 @ApiModel(description = "用图片生成模型表单")

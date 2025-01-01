@@ -9,10 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 
-/**
- * @author 陈立坤
- * @date 2023/12/20
- */
+
 @SpringBootApplication
 @EnableSwagger2WebMvc
 @EnableFeignClients(clients = ModelClient.class)

@@ -11,9 +11,6 @@ import com.liushenwuzu.domain.vo.UserVo;
 
 /**
  * 用户service实现类
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public interface UserService extends IService<User> {
 

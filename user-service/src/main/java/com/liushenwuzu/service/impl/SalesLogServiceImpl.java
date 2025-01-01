@@ -22,9 +22,6 @@ import java.util.List;
 
 /**
  * 出售日志service层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Slf4j
 @Service

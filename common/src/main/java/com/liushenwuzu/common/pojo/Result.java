@@ -6,9 +6,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * 用于封装所有返回给前端的结果
- *
- * @author 陈立坤
- * @date 2023/09/25
  */
 @Data
 @NoArgsConstructor

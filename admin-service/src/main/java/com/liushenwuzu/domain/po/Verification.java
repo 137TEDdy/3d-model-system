@@ -16,9 +16,6 @@ import java.time.LocalDateTime;
 
 /**
  * 认证审核.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

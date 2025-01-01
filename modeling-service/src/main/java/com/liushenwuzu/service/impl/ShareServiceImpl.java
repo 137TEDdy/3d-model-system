@@ -12,9 +12,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 分享service层实现
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Service
 public class ShareServiceImpl extends ServiceImpl<ShareMapper, Share> implements ShareService {

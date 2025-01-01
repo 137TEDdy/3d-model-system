@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * 商户提供满足满足service层
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @Service
 public class SatisfactionServiceImpl extends

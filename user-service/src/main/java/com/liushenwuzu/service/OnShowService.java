@@ -9,9 +9,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 在售模型service层接口
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public interface OnShowService extends IService<OnShow> {
 

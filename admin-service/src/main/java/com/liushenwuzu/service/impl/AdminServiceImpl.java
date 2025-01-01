@@ -22,9 +22,6 @@ import java.util.Map;
 
 /**
  * 管理员表 服务实现类.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Service
 @RequiredArgsConstructor
@@ -32,9 +29,6 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 
   /**
    * 管理员登录.
-   *
-   * @param loginFormDTO 表单
-   * @return 执行结果
    */
   public Result login(AdminLoginFormDto loginFormDTO) {
     //如果电话号码或者密码为空

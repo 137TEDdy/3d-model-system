@@ -37,9 +37,6 @@ import org.springframework.web.multipart.MultipartRequest;
 
 /**
  * 模型服务
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 @Service
 public class ModelServiceImpl extends ServiceImpl<ModelMapper, Model> implements ModelService {

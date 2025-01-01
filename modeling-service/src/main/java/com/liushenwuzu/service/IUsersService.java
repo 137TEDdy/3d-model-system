@@ -7,10 +7,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 服务类
- *
- * @author clk
- *
- * @since 2023-12-15
  */
 public interface IUsersService extends IService<User> {
 

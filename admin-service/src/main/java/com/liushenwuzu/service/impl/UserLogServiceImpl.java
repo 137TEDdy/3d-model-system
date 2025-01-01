@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 用户登录日志 服务实现类.
- *
- * @author clk
- * @since 2023-11-14
  */
 @Service
 public class UserLogServiceImpl extends ServiceImpl<UserLogMapper, UserLog>

@@ -2,10 +2,7 @@ package com.liushenwuzu.domain.vo;
 
 import lombok.Data;
 
-/**
- * @author 陈立坤
- * @date 2023/12/20
- */
+
 @Data
 public class TransitionLogVo {
 

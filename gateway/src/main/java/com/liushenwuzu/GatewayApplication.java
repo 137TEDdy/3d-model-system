@@ -5,9 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * gateway启动类
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 @SpringBootApplication
 public class GatewayApplication {

@@ -9,9 +9,6 @@ import java.util.List;
 
 /**
  * 动态service接口
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 public interface IMomentsService extends IService<Moments> {
 

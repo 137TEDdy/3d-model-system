@@ -15,9 +15,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 /**
  * 模型服务启动类
- *
- * @author 陈立坤
- * @date 2023/12/19
  */
 @SpringBootApplication
 @EnableSwagger2WebMvc

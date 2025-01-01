@@ -23,9 +23,6 @@ import reactor.core.publisher.Mono;
 
 /**
  * 全局拦截器
- *
- * @author 陈立坤
- * @date 2023/12/20
  */
 @Component
 @RequiredArgsConstructor
